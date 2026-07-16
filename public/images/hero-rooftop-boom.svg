@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+
+<text x="70" y="78" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">ROOFTOP SOLAR</text>
+<text x="70" y="132" font-size="44" font-family="Georgia, serif" font-weight="bold" fill="#17211b">Rooftop additions have doubled</text>
+<text x="70" y="172" font-size="24" fill="#5d6a62">Rooftop solar capacity added in first half of year (GW)</text><line x1="80" y1="560" x2="1120" y2="560" stroke="#c9d4cc" stroke-width="2"/><path d="M280 560 L280 422.8994565217391 Q280 418.8994565217391 284 418.8994565217391 L426 418.8994565217391 Q430 418.8994565217391 430 422.8994565217391 L430 560 Z" fill="#8fcfa8"/><text x="355" y="402.8994565217391" font-size="30" font-weight="bold" fill="#17211b" text-anchor="middle">~3.1 GW</text><text x="355" y="594" font-size="22" fill="#5d6a62" text-anchor="middle">H1 2025</text><path d="M770 560 L770 272.695652173913 Q770 268.695652173913 774 268.695652173913 L916 268.695652173913 Q920 268.695652173913 920 272.695652173913 L920 560 Z" fill="#17693e"/><text x="845" y="252.695652173913" font-size="30" font-weight="bold" fill="#17211b" text-anchor="middle">6.4 GW</text><text x="845" y="594" font-size="22" fill="#5d6a62" text-anchor="middle">H1 2026</text><text x="70" y="639" font-size="19" fill="#5d6a62">Source: Industry reports on PM Surya Ghar progress, July 2026 · Graphic: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>

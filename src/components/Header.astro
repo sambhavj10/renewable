@@ -1,0 +1,41 @@
+---
+import { SITE_TAGLINE, CATEGORIES, categorySlug, formatDate } from '../lib/site';
+
+const today = formatDate(new Date());
+const { active = '' } = Astro.props;
+---
+
+<div class="topbar">
+  <div class="container">
+    <span>{today}</span>
+    <span>Published every Sunday</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="container">
+    <a href="/" class="brand">Green<span class="accent">Grid</span> India</a>
+    <p class="tagline">{SITE_TAGLINE}</p>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Main navigation">
+  <div class="container">
+    <ul>
+      <li><a href="/" aria-current={active === 'home' ? 'page' : undefined}>Home</a></li>
+      {
+        CATEGORIES.map((cat) => (
+          <li>
+            <a
+              href={`/category/${categorySlug(cat)}`}
+              aria-current={active === categorySlug(cat) ? 'page' : undefined}
+            >
+              {cat}
+            </a>
+          </li>
+        ))
+      }
+      <li><a href="/about" aria-current={active === 'about' ? 'page' : undefined}>About</a></li>
+    </ul>
+  </div>
+</nav>

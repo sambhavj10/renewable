@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#f2f8f4"/>
+
+<text x="70" y="86" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">GREEN HYDROGEN</text>
+<text x="70" y="146" font-size="46" font-family="Georgia, serif" font-weight="bold" fill="#17211b">H&#8322; heads for the blast furnace</text><rect x="0" y="560" width="1200" height="115" fill="#dceadf"/><rect x="640" y="370" width="420" height="175" fill="#2f4a3a"/><path d="M640 370 L640 324 L715.6 370 Z" fill="#4a5f70"/><path d="M745 370 L745 324 L820.6 370 Z" fill="#4a5f70"/><path d="M850 370 L850 324 L925.5999999999999 370 Z" fill="#4a5f70"/><path d="M955 370 L955 324 L1030.6 370 Z" fill="#4a5f70"/><rect x="658" y="406" width="61" height="52" rx="4" fill="#cfe0d5"/><rect x="763" y="406" width="61" height="52" rx="4" fill="#cfe0d5"/><rect x="868" y="406" width="61" height="52" rx="4" fill="#cfe0d5"/><rect x="973" y="406" width="61" height="52" rx="4" fill="#cfe0d5"/>
+<rect x="664" y="471" width="64" height="74" rx="4" fill="#1c2e24"/>
+<rect x="1000" y="250" width="26" height="120" fill="#3d5a49"/><g>
+<circle cx="260" cy="360" r="110" fill="#e9f3ec" stroke="#17693e" stroke-width="6"/>
+<text x="260" y="385" font-size="72" font-weight="bold" fill="#0f4c2c" text-anchor="middle">H&#8322;</text>
+<circle cx="150" cy="260" r="26" fill="#bfe0cc"/>
+<circle cx="372" cy="252" r="20" fill="#bfe0cc"/>
+<circle cx="330" cy="472" r="16" fill="#bfe0cc"/>
+</g>
+<path d="M380 380 C480 380 500 440 620 445" stroke="#17693e" stroke-width="10" fill="none" stroke-dasharray="2 20" stroke-linecap="round"/><text x="850" y="605" font-size="21" fill="#5d6a62" text-anchor="middle">Steel plant pilot projects</text><text x="70" y="639" font-size="19" fill="#5d6a62">Illustration: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>

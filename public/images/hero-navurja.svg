@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#f2f8f4"/>
+
+<text x="70" y="86" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">MANUFACTURING</text>
+<text x="70" y="146" font-size="46" font-family="Georgia, serif" font-weight="bold" fill="#17211b">A new solar components hub near Bhopal</text><rect x="0" y="545" width="1200" height="130" fill="#dceadf"/><circle cx="1050" cy="130" r="46" fill="#f2c94c"/><line x1="1110" y1="130" x2="1130" y2="130" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="1092.4264068711927" y1="172.42640687119285" x2="1106.5685424949238" y2="186.5685424949238" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="1050" y1="190" x2="1050" y2="210" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="1007.5735931288071" y1="172.42640687119285" x2="993.4314575050762" y2="186.5685424949238" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="990" y1="130" x2="970" y2="130" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="1007.5735931288071" y1="87.57359312880715" x2="993.4314575050762" y2="73.4314575050762" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="1050" y1="70" x2="1050" y2="50" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><line x1="1092.4264068711927" y1="87.57359312880715" x2="1106.5685424949238" y2="73.43145750507618" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/><rect x="120" y="360" width="420" height="185" fill="#2f4a3a"/><path d="M120 360 L120 314 L195.6 360 Z" fill="#17693e"/><path d="M225 360 L225 314 L300.6 360 Z" fill="#17693e"/><path d="M330 360 L330 314 L405.59999999999997 360 Z" fill="#17693e"/><path d="M435 360 L435 314 L510.59999999999997 360 Z" fill="#17693e"/><rect x="138" y="396" width="61" height="52" rx="4" fill="#cfe0d5"/><rect x="243" y="396" width="61" height="52" rx="4" fill="#cfe0d5"/><rect x="348" y="396" width="61" height="52" rx="4" fill="#cfe0d5"/><rect x="453" y="396" width="61" height="52" rx="4" fill="#cfe0d5"/>
+<rect x="144" y="471" width="64" height="74" rx="4" fill="#1c2e24"/>
+<rect x="480" y="240" width="26" height="120" fill="#3d5a49"/><g>
+<ellipse cx="700" cy="475" rx="34" ry="70" fill="#cdd8d0"/>
+<rect x="700" y="405" width="190" height="140" fill="#e4ebe6"/>
+<ellipse cx="890" cy="475" rx="34" ry="70" fill="#f3f6f4"/>
+<ellipse cx="890" cy="475" rx="14" ry="34" fill="#9fb2a6"/>
+<text x="795" y="483" font-size="20" fill="#5d6a62" text-anchor="middle">EVA / POE film</text>
+</g><g transform="skewX(-14)" transform-origin="980 530">
+<rect x="980" y="430" width="170" height="100" rx="6" fill="#1d4869"/><rect x="993" y="443" width="44" height="34" rx="3" fill="#2b5f8f"/><rect x="1043" y="443" width="44" height="34" rx="3" fill="#2b5f8f"/><rect x="1093" y="443" width="44" height="34" rx="3" fill="#2b5f8f"/><rect x="993" y="483" width="44" height="34" rx="3" fill="#2b5f8f"/><rect x="1043" y="483" width="44" height="34" rx="3" fill="#2b5f8f"/><rect x="1093" y="483" width="44" height="34" rx="3" fill="#2b5f8f"/>
+</g>
+<rect x="1058" y="530" width="14" height="46" fill="#66756b"/><text x="70" y="639" font-size="19" fill="#5d6a62">Illustration: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>

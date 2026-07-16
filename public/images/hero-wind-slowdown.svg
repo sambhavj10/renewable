@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+
+<text x="70" y="78" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">WIND</text>
+<text x="70" y="132" font-size="44" font-family="Georgia, serif" font-weight="bold" fill="#17211b">Wind&#8217;s slower half-year</text>
+<text x="70" y="172" font-size="24" fill="#5d6a62">Wind capacity added in first half of year (GW)</text><line x1="80" y1="560" x2="1120" y2="560" stroke="#c9d4cc" stroke-width="2"/><path d="M280 560 L280 272.695652173913 Q280 268.695652173913 284 268.695652173913 L426 268.695652173913 Q430 268.695652173913 430 272.695652173913 L430 560 Z" fill="#8fcfa8"/><text x="355" y="252.695652173913" font-size="30" font-weight="bold" fill="#17211b" text-anchor="middle">3.5 GW</text><text x="355" y="594" font-size="22" fill="#5d6a62" text-anchor="middle">H1 2025</text><path d="M770 560 L770 322.6335403726708 Q770 318.6335403726708 774 318.6335403726708 L916 318.6335403726708 Q920 318.6335403726708 920 322.6335403726708 L920 560 Z" fill="#17693e"/><text x="845" y="302.6335403726708" font-size="30" font-weight="bold" fill="#17211b" text-anchor="middle">2.9 GW</text><text x="845" y="594" font-size="22" fill="#5d6a62" text-anchor="middle">H1 2026</text><text x="70" y="639" font-size="19" fill="#5d6a62">Source: Industry reports, July 2026 · Graphic: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>

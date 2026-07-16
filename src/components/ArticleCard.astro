@@ -1,0 +1,21 @@
+---
+import { categorySlug, formatDate } from '../lib/site';
+
+const { article } = Astro.props;
+const { title, date, category, excerpt, hero, heroAlt } = article.data;
+const url = `/articles/${article.id}`;
+---
+
+<article class="card">
+  <a class="thumb" href={url}>
+    <img src={hero} alt={heroAlt} loading="lazy" />
+  </a>
+  <div class="body">
+    <div class="meta">
+      <a class="badge" href={`/category/${categorySlug(category)}`}>{category}</a>
+      <time datetime={date.toISOString()}>{formatDate(date)}</time>
+    </div>
+    <h3><a href={url}>{title}</a></h3>
+    <p class="excerpt">{excerpt}</p>
+  </div>
+</article>

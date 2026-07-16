@@ -1,0 +1,43 @@
+---
+import { SITE_NAME, CATEGORIES, categorySlug } from '../lib/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="sitefooter">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h4>{SITE_NAME}</h4>
+        <p>
+          An independent publication tracking India&rsquo;s renewable energy transition &mdash;
+          solar, wind, storage, green hydrogen, manufacturing and policy. A new article every
+          Sunday.
+        </p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          {
+            CATEGORIES.map((cat) => (
+              <li>
+                <a href={`/category/${categorySlug(cat)}`}>{cat}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/rss.xml">RSS feed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; {year} {SITE_NAME}. Launched July 2026.</span>
+      <span>All articles cite their sources.</span>
+    </div>
+  </div>
+</footer>

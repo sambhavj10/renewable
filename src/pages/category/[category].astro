@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { CATEGORIES, categorySlug } from '../../lib/site';
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((category) => ({
+    params: { category: categorySlug(category) },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+
+const articles = (await getCollection('articles'))
+  .filter((a) => a.data.category === category)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const blurbs: Record<string, string> = {
+  Solar: 'Utility-scale and rooftop solar across India — capacity, projects, tariffs and technology.',
+  Wind: 'Onshore and offshore wind energy developments across India.',
+  Storage: 'Battery energy storage systems, pumped hydro and grid flexibility.',
+  Hydrogen: 'The National Green Hydrogen Mission and India’s emerging hydrogen economy.',
+  Manufacturing: 'Modules, cells, wafers and components — India’s clean energy manufacturing build-out.',
+  'Policy & Markets': 'Tenders, auctions, regulation, budgets and market trends shaping the sector.',
+};
+---
+
+<Base title={category} description={blurbs[category]} active={categorySlug(category)}>
+  <div class="container">
+    <div class="category-head">
+      <h1>{category}</h1>
+      <p>{blurbs[category]}</p>
+    </div>
+    <h2 class="section-title">All articles</h2>
+    {
+      articles.length > 0 ? (
+        <div class="grid" style="margin-bottom: 2.5rem;">
+          {articles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      ) : (
+        <p style="color: var(--muted); margin-bottom: 3rem;">
+          No articles in this section yet — check back on Sunday.
+        </p>
+      )
+    }
+  </div>
+</Base>

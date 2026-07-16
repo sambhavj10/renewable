@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { categorySlug, formatDate } from '../lib/site';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const featured = articles.find((a) => a.data.featured) ?? articles[0];
+const rest = articles.filter((a) => a.id !== featured.id);
+---
+
+<Base active="home">
+  <div class="container">
+    {
+      featured && (
+        <section class="hero-feature">
+          <a class="thumb" href={`/articles/${featured.id}`}>
+            <img src={featured.data.hero} alt={featured.data.heroAlt} />
+          </a>
+          <div>
+            <div class="meta">
+              <a class="badge" href={`/category/${categorySlug(featured.data.category)}`}>
+                {featured.data.category}
+              </a>
+              <time datetime={featured.data.date.toISOString()}>
+                {formatDate(featured.data.date)}
+              </time>
+            </div>
+            <h2>
+              <a href={`/articles/${featured.id}`}>{featured.data.title}</a>
+            </h2>
+            <p class="excerpt">{featured.data.excerpt}</p>
+            <a class="readmore" href={`/articles/${featured.id}`}>
+              Read the full story →
+            </a>
+          </div>
+        </section>
+      )
+    }
+
+    <h2 class="section-title">
+      Latest coverage
+      <a class="more" href="/rss.xml">Subscribe via RSS</a>
+    </h2>
+    <div class="grid">
+      {rest.map((article) => <ArticleCard article={article} />)}
+    </div>
+  </div>
+</Base>

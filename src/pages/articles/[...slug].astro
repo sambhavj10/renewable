@@ -1,0 +1,79 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { categorySlug, formatDate } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { title, date, category, excerpt, hero, heroAlt, sources } = article.data;
+const { Content } = await render(article);
+
+const related = (await getCollection('articles'))
+  .filter((a) => a.id !== article.id && a.data.category === category)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+---
+
+<Base title={title} description={excerpt} active={categorySlug(category)}>
+  <header class="article-head">
+    <div class="meta">
+      <a class="badge" href={`/category/${categorySlug(category)}`}>{category}</a>
+    </div>
+    <h1>{title}</h1>
+    <p class="standfirst">{excerpt}</p>
+    <div class="article-byline">
+      <span><strong>GreenGrid India Bureau</strong></span>
+      <span>·</span>
+      <time datetime={date.toISOString()}>{formatDate(date)}</time>
+    </div>
+  </header>
+
+  <figure class="article-hero">
+    <img src={hero} alt={heroAlt} />
+    <figcaption>{heroAlt}</figcaption>
+  </figure>
+
+  <div class="article-body">
+    <Content />
+  </div>
+
+  {
+    sources.length > 0 && (
+      <aside class="article-sources">
+        <div class="inner">
+          <h2>Sources &amp; further reading</h2>
+          <ul>
+            {sources.map((s) => (
+              <li>
+                <a href={s.url} rel="noopener noreferrer" target="_blank">
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
+    )
+  }
+
+  {
+    related.length > 0 && (
+      <div class="container">
+        <h2 class="section-title">More in {category}</h2>
+        <div class="grid" style="margin-bottom: 2.5rem;">
+          {related.map((a) => (
+            <ArticleCard article={a} />
+          ))}
+        </div>
+      </div>
+    )
+  }
+</Base>
