@@ -1,6 +1,6 @@
 ---
 title: 'India’s battery storage fleet grows eleven-fold in six months'
-date: 2026-07-15
+date: 2026-05-31
 category: Storage
 excerpt: 'Operational battery energy storage climbed from 0.78 GWh in December 2025 to about 8.7 GWh by June 2026, with 10 GW under construction and roughly 20 GW in active tendering.'
 hero: /images/hero-bess-surge.svg
