@@ -1,6 +1,6 @@
 ---
 title: 'ALMM List-II is here: what the solar cell mandate means for developers'
-date: 2026-07-15
+date: 2026-06-07
 category: 'Policy & Markets'
 excerpt: 'From June 2026, government-backed solar projects must source not just modules but also cells from approved domestic manufacturers. Here’s what the change does — and where it bites.'
 hero: /images/hero-almm-list2.svg
