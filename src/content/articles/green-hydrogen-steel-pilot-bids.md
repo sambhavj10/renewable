@@ -1,6 +1,6 @@
 ---
 title: 'Green hydrogen meets steel: government invites bids for pilot projects'
-date: 2026-07-15
+date: 2026-05-10
 category: Hydrogen
 excerpt: 'MNRE and the Ministry of Steel are seeking pilot projects that use green hydrogen in steelmaking — a small step aimed at one of India’s hardest-to-abate sectors.'
 hero: /images/hero-h2-steel.svg
