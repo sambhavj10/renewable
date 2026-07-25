@@ -1,6 +1,6 @@
 ---
 title: 'SECI floats 700 MW ISTS solar tender for Odisha C&I demand'
-date: 2026-07-15
+date: 2026-04-12
 category: 'Policy & Markets'
 excerpt: 'The Solar Energy Corporation of India has invited bids for 700 MW of inter-state transmission connected solar, to be built on a build-own-operate basis with 25-year PPAs.'
 hero: /images/hero-seci-tender.svg
