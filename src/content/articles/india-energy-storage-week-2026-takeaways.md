@@ -1,6 +1,6 @@
 ---
 title: 'Batteries, EVs and a hint of hydrogen: takeaways from India Energy Storage Week 2026'
-date: 2026-07-15
+date: 2026-06-14
 category: Storage
 excerpt: 'The 12th edition of IESW brought delegates from 15 countries to New Delhi from July 8–10, with the mood shifting from “whether storage” to “how much, how fast”.'
 hero: /images/hero-iesw-2026.svg
