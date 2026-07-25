@@ -1,6 +1,6 @@
 ---
 title: 'Gujarat’s new industrial policy puts clean energy manufacturing at the centre'
-date: 2026-07-15
+date: 2026-05-17
 category: 'Policy & Markets'
 excerpt: 'Renewable equipment, battery storage, green hydrogen and nuclear equipment are named priority sectors in Gujarat’s latest industrial policy — a bid to own the supply chain, not just the generation.'
 hero: /images/hero-gujarat-policy.svg
