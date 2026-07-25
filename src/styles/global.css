@@ -276,6 +276,65 @@ a {
   }
 }
 
+/* ---------- Rotating featured hero ---------- */
+.hero-rotator {
+  padding-top: 0.5rem;
+}
+
+.hero-slide {
+  display: none;
+}
+
+.hero-slide.active {
+  display: grid;
+  animation: heroFade 0.55s ease;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.9rem 0 0.2rem;
+}
+
+.hero-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #cbd8ce;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero-dot:hover {
+  background: var(--green);
+}
+
+.hero-dot.active {
+  background: var(--green);
+  transform: scale(1.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide.active {
+    animation: none;
+  }
+}
+
 /* ---------- Article page ---------- */
 .article-head {
   max-width: 760px;
