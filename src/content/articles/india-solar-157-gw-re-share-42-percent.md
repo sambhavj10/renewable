@@ -1,6 +1,6 @@
 ---
 title: 'India’s solar fleet crosses 157 GW as renewables reach 42.5% of power capacity'
-date: 2026-07-15
+date: 2026-06-28
 category: Solar
 excerpt: 'A snapshot of where the 288 GW renewable fleet stands — what’s in it, how fast each piece is growing, and how far 500 GW by 2030 remains.'
 hero: /images/hero-re-mix.svg
