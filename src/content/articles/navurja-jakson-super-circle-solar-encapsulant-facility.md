@@ -1,6 +1,6 @@
 ---
 title: 'Jakson and Super Circle joint venture Navurja to build India’s largest solar encapsulant film plant near Bhopal'
-date: 2026-07-15
+date: 2026-05-03
 category: Manufacturing
 excerpt: 'Nayurja Bharat Pvt. Ltd. is investing ₹1,000 crore in a solar component manufacturing complex at Mohasa-Babai in Madhya Pradesh, starting with encapsulant film capacity of 3 GW, scalable to 10 GW.'
 hero: /images/hero-navurja.svg
