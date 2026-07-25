@@ -1,6 +1,6 @@
 ---
 title: 'Wind’s slow half: 2.9 GW in H1 2026 as solar races ahead'
-date: 2026-07-15
+date: 2026-04-26
 category: Wind
 excerpt: 'India added about 2.9 GW of wind between January and June, down 16% year on year — a soft patch in an otherwise record-breaking half for renewables.'
 hero: /images/hero-wind-slowdown.svg
