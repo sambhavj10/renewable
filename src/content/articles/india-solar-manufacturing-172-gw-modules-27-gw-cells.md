@@ -1,6 +1,6 @@
 ---
 title: 'Modules at 172 GW, cells at 27 GW: the lopsided rise of Indian solar manufacturing'
-date: 2026-07-15
+date: 2026-07-05
 category: Manufacturing
 excerpt: 'India’s module capacity has grown from 3 GW a decade ago to about 172 GW today. The harder, more capital-intensive layers of the supply chain are only now catching up.'
 hero: /images/hero-manufacturing-172gw.svg
