@@ -1,6 +1,6 @@
 ---
 title: 'Kerala fast-tracks 750 MW of battery storage to steady its grid'
-date: 2026-07-15
+date: 2026-07-12
 category: Storage
 excerpt: 'A power-importing state with an evening-peak problem is turning to batteries — Kerala is accelerating 750 MW of BESS projects to firm up its renewable supply.'
 hero: /images/hero-kerala-bess.svg
