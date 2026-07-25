@@ -1,6 +1,6 @@
 ---
 title: 'Rooftop solar doubles: PM Surya Ghar delivers 6.4 GW in six months'
-date: 2026-07-15
+date: 2026-07-26
 category: Solar
 excerpt: 'India’s rooftop segment added around 6.4 GW in the first half of 2026, up 104% year on year, making it the fastest-growing slice of the solar market.'
 hero: /images/hero-rooftop-boom.svg
