@@ -1,6 +1,6 @@
 ---
 title: 'India adds a record 29 GW of solar and wind in the first half of 2026'
-date: 2026-07-15
+date: 2026-06-21
 category: Solar
 excerpt: 'Utility-scale solar led the way with around 19 GW of new capacity between January and June, up roughly a third year on year, as India’s cumulative renewable capacity reached about 288 GW.'
 hero: /images/hero-h1-2026-record.svg
