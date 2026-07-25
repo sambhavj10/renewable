@@ -1,6 +1,6 @@
 ---
 title: 'The state race: Gujarat leads H1 2026 solar with 7.6 GW, Rajasthan close behind'
-date: 2026-07-15
+date: 2026-05-24
 category: Solar
 excerpt: 'Two western states accounted for more than half of India’s solar additions in the first half of 2026. Tamil Nadu was a distant third.'
 hero: /images/hero-state-race.svg
