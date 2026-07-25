@@ -1,6 +1,6 @@
 ---
 title: 'MNRE’s budget rises 30% to ₹32,914 crore'
-date: 2026-07-15
+date: 2026-07-19
 category: 'Policy & Markets'
 excerpt: 'The renewable energy ministry’s allocation grew nearly a third, with solar schemes, grid storage, green energy corridors and the hydrogen mission taking the lion’s share.'
 hero: /images/hero-mnre-budget.svg
