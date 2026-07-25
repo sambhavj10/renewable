@@ -1,6 +1,6 @@
 ---
 title: 'Solar-plus-storage tariffs are now knocking on coal’s door'
-date: 2026-07-15
+date: 2026-04-19
 category: Storage
 excerpt: 'Recent SECI auctions have cleared solar-with-storage bids at levels analysts describe as competitive with new coal plants — a threshold with big implications for what India builds next.'
 hero: /images/hero-storage-tariffs.svg
