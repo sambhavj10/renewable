@@ -7,46 +7,95 @@ import { categorySlug, formatDate } from '../lib/site';
 const articles = (await getCollection('articles')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
-
-const featured = articles.find((a) => a.data.featured) ?? articles[0];
-const rest = articles.filter((a) => a.id !== featured.id);
 ---
 
 <Base active="home">
   <div class="container">
-    {
-      featured && (
-        <section class="hero-feature">
-          <a class="thumb" href={`/articles/${featured.id}`}>
-            <img src={featured.data.hero} alt={featured.data.heroAlt} />
-          </a>
-          <div>
-            <div class="meta">
-              <a class="badge" href={`/category/${categorySlug(featured.data.category)}`}>
-                {featured.data.category}
+    <section class="hero-rotator" aria-label="Featured stories">
+      <div class="hero-slides">
+        {
+          articles.map((article, i) => (
+            <article class:list={['hero-feature', 'hero-slide', { active: i === 0 }]} data-slide={i}>
+              <a class="thumb" href={`/articles/${article.id}`}>
+                <img
+                  src={article.data.hero}
+                  alt={article.data.heroAlt}
+                  loading={i === 0 ? 'eager' : 'lazy'}
+                />
               </a>
-              <time datetime={featured.data.date.toISOString()}>
-                {formatDate(featured.data.date)}
-              </time>
-            </div>
-            <h2>
-              <a href={`/articles/${featured.id}`}>{featured.data.title}</a>
-            </h2>
-            <p class="excerpt">{featured.data.excerpt}</p>
-            <a class="readmore" href={`/articles/${featured.id}`}>
-              Read the full story →
-            </a>
-          </div>
-        </section>
-      )
-    }
+              <div>
+                <div class="meta">
+                  <a class="badge" href={`/category/${categorySlug(article.data.category)}`}>
+                    {article.data.category}
+                  </a>
+                  <time datetime={article.data.date.toISOString()}>
+                    {formatDate(article.data.date)}
+                  </time>
+                </div>
+                <h2>
+                  <a href={`/articles/${article.id}`}>{article.data.title}</a>
+                </h2>
+                <p class="excerpt">{article.data.excerpt}</p>
+                <a class="readmore" href={`/articles/${article.id}`}>
+                  Read the full story →
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+      <div class="hero-dots" aria-label="Choose a featured story">
+        {
+          articles.map((article, i) => (
+            <button
+              type="button"
+              class:list={['hero-dot', { active: i === 0 }]}
+              data-dot={i}
+              aria-label={`Show featured story ${i + 1}: ${article.data.title}`}
+            />
+          ))
+        }
+      </div>
+    </section>
 
-    <h2 class="section-title">
-      Latest coverage
-      <a class="more" href="/rss.xml">Subscribe via RSS</a>
-    </h2>
+    <h2 class="section-title">Latest coverage</h2>
     <div class="grid">
-      {rest.map((article) => <ArticleCard article={article} />)}
+      {articles.map((article) => <ArticleCard article={article} />)}
     </div>
   </div>
 </Base>
+
+<script>
+  const rotator = document.querySelector('.hero-rotator');
+  if (rotator) {
+    const slides = Array.from(rotator.querySelectorAll<HTMLElement>('.hero-slide'));
+    const dots = Array.from(rotator.querySelectorAll<HTMLElement>('.hero-dot'));
+    let current = 0;
+    let timer: ReturnType<typeof setInterval> | undefined;
+
+    const show = (n: number) => {
+      current = (n + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle('active', i === current));
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    };
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const start = () => {
+      if (!reduceMotion && slides.length > 1) timer = setInterval(() => show(current + 1), 6000);
+    };
+    const stop = () => {
+      if (timer) clearInterval(timer);
+    };
+
+    dots.forEach((dot, i) =>
+      dot.addEventListener('click', () => {
+        stop();
+        show(i);
+        start();
+      })
+    );
+    rotator.addEventListener('mouseenter', stop);
+    rotator.addEventListener('mouseleave', start);
+    start();
+  }
+</script>
