@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+
+<text x="70" y="78" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">THE BIG PICTURE</text>
+<text x="70" y="132" font-size="44" font-family="Georgia, serif" font-weight="bold" fill="#17211b">India crosses 300 GW of non-fossil power</text>
+<text x="70" y="360" font-size="140" font-family="Georgia, serif" font-weight="bold" fill="#0f4c2c">300.5 GW</text><text x="70" y="415" font-size="28" fill="#5d6a62">Non-fossil installed capacity — past 60% of the 500 GW target for 2030</text><rect x="70" y="465" width="330" height="110" rx="8" fill="#e9f3ec"/>
+<text x="94" y="513" font-size="32" font-weight="bold" fill="#0f4c2c">164.6 GW</text>
+<text x="94" y="548" font-size="20" fill="#5d6a62">Solar</text><rect x="430" y="465" width="330" height="110" rx="8" fill="#e9f3ec"/>
+<text x="454" y="513" font-size="32" font-weight="bold" fill="#0f4c2c">58.1 GW</text>
+<text x="454" y="548" font-size="20" fill="#5d6a62">Wind</text><rect x="790" y="465" width="330" height="110" rx="8" fill="#e9f3ec"/>
+<text x="814" y="513" font-size="32" font-weight="bold" fill="#0f4c2c">&gt;60%</text>
+<text x="814" y="548" font-size="20" fill="#5d6a62">of the 2030 target</text><text x="70" y="639" font-size="19" fill="#5d6a62">Source: Government capacity data, August 2026 · Graphic: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>

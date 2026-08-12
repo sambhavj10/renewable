@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+
+<text x="70" y="78" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">POLICY &amp; MARKETS</text>
+<text x="70" y="132" font-size="44" font-family="Georgia, serif" font-weight="bold" fill="#17211b">A longer runway for storage</text>
+<text x="70" y="172" font-size="24" fill="#5d6a62">ISTS transmission-charge waiver for integrated BESS (years)</text><line x1="80" y1="560" x2="1120" y2="560" stroke="#c9d4cc" stroke-width="2"/><path d="M280 560 L280 424.17391304347825 Q280 420.17391304347825 284 420.17391304347825 L426 420.17391304347825 Q430 420.17391304347825 430 424.17391304347825 L430 560 Z" fill="#8fcfa8"/><text x="355" y="404.17391304347825" font-size="30" font-weight="bold" fill="#17211b" text-anchor="middle">12 yrs</text><text x="355" y="594" font-size="22" fill="#5d6a62" text-anchor="middle">Current</text><path d="M770 560 L770 272.695652173913 Q770 268.695652173913 774 268.695652173913 L916 268.695652173913 Q920 268.695652173913 920 272.695652173913 L920 560 Z" fill="#17693e"/><text x="845" y="252.695652173913" font-size="30" font-weight="bold" fill="#17211b" text-anchor="middle">25 yrs</text><text x="845" y="594" font-size="22" fill="#5d6a62" text-anchor="middle">Proposed</text><text x="70" y="639" font-size="19" fill="#5d6a62">Source: CERC draft Fifth Amendment, 2026 · Graphic: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>
