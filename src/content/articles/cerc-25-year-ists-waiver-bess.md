@@ -1,6 +1,6 @@
 ---
 title: 'CERC proposes a 25-year transmission-charge waiver for storage tied to renewables'
-date: 2026-08-12
+date: 2026-08-02
 category: 'Policy & Markets'
 excerpt: 'A draft amendment would more than double the ISTS charge waiver for batteries integrated with renewable projects — from 12 years to 25 — sharpening the economics of storage-backed clean power.'
 hero: /images/hero-cerc-waiver.svg
