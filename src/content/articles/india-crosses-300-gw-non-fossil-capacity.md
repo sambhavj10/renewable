@@ -1,6 +1,6 @@
 ---
 title: 'India crosses 300 GW of non-fossil capacity, past 60% of its 2030 target'
-date: 2026-08-12
+date: 2026-08-09
 category: 'Policy & Markets'
 excerpt: 'Non-fossil installed capacity has reached 300.5 GW — more than 60% of the 500 GW target for 2030 — with solar alone at 164.6 GW and wind at 58.1 GW.'
 hero: /images/hero-300-gw-milestone.svg
