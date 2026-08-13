@@ -1,6 +1,6 @@
 ---
 title: 'SECI awards 1 GW of round-the-clock renewables at ₹5.25 a unit'
-date: 2026-08-12
+date: 2026-08-16
 category: Storage
 excerpt: 'A firm, dispatchable, round-the-clock renewable tender has cleared at ₹5.25/kWh — fresh evidence that storage-backed clean power can supply reliable baseload-style electricity at competitive rates.'
 hero: /images/hero-rtc-tariff.svg
