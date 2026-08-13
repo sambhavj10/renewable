@@ -1,0 +1,85 @@
+name: Publish weekly article to main
+
+# Bridges the weekly article-writing Routine to the live site.
+#
+# Every Sunday a scheduled Claude Routine writes one new article and pushes it
+# to the dev branch (DEV_BRANCH below), never to main. Vercel only deploys
+# main, so on its own that article never goes live. This workflow closes that
+# gap: it merges the dev branch into main so Vercel auto-deploys the new post.
+#
+# It runs on a schedule a few hours AFTER the article Routine (which fires
+# ~03:30 UTC Sunday), and can also be triggered by hand at any time. A
+# scheduled workflow always runs from the default branch (main), which is why
+# this lives on main rather than on the dev branch.
+
+on:
+  schedule:
+    # 06:07 UTC every Sunday — a safe buffer after the ~03:30 UTC article Routine.
+    - cron: "7 6 * * 0"
+  workflow_dispatch: {}
+
+# Least privilege: only needs to push the merge commit to main.
+permissions:
+  contents: write
+
+# Never let two publish runs race each other onto main.
+concurrency:
+  group: publish-to-main
+  cancel-in-progress: false
+
+env:
+  DEV_BRANCH: claude/renewable-energy-india-news-awanrf
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (full history)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch dev branch
+        run: git fetch origin "$DEV_BRANCH"
+
+      - name: Skip if nothing new to publish
+        id: check
+        run: |
+          if git merge-base --is-ancestor "origin/$DEV_BRANCH" HEAD; then
+            echo "main already contains all of $DEV_BRANCH — nothing to publish."
+            echo "changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "New commits on $DEV_BRANCH to publish:"
+            git log --oneline "HEAD..origin/$DEV_BRANCH"
+            echo "changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Merge dev branch into main
+        if: steps.check.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git merge --no-ff --no-edit \
+            -m "Publish weekly article(s): merge $DEV_BRANCH into main" \
+            "origin/$DEV_BRANCH"
+
+      - name: Set up Node
+        if: steps.check.outputs.changes == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.check.outputs.changes == 'true'
+        run: npm ci
+
+      - name: Build (safety gate before going live)
+        if: steps.check.outputs.changes == 'true'
+        run: npm run build
+
+      - name: Push to main
+        if: steps.check.outputs.changes == 'true'
+        run: git push origin HEAD:main
