@@ -1,6 +1,6 @@
 ---
 title: 'India bets on pumped hydro: a roadmap to 100 GW of ''water battery'' storage'
-date: 2026-10-05
+date: 2026-09-20
 category: 'Storage'
 excerpt: 'As solar and wind flood the grid, India is leaning on pumped storage for long-duration firming — with a national roadmap targeting 100 GW and a wave of state MoUs for multi-gigawatt projects led by Maharashtra.'
 hero: /images/hero-pumped-storage.svg
