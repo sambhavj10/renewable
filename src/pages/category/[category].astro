@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
-import { CATEGORIES, categorySlug } from '../../lib/site';
+import { CATEGORIES, categorySlug, isPublished } from '../../lib/site';
 
 export async function getStaticPaths() {
   return CATEGORIES.map((category) => ({
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { category } = Astro.props;
 
 const articles = (await getCollection('articles'))
-  .filter((a) => a.data.category === category)
+  .filter((a) => a.data.category === category && isPublished(a.data.date))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const blurbs: Record<string, string> = {
