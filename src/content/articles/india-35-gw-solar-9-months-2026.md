@@ -1,6 +1,6 @@
 ---
 title: 'India adds 35 GW of solar in the first nine months of 2026, heading for a record year'
-date: 2026-10-14
+date: 2026-10-11
 category: 'Solar'
 excerpt: 'New data from JMK Research shows India installed about 35.2 GW of solar and 4.69 GW of wind in January–September 2026, keeping the country on course for its strongest-ever year of clean power additions.'
 hero: /images/hero-9m-2026-additions.svg
