@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+<text x="70" y="78" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">SOLAR</text>
+<text x="70" y="132" font-size="44" font-family="Georgia, serif" font-weight="bold" fill="#17211b">Power and food on one acre</text>
+<text x="70" y="360" font-size="140" font-family="Georgia, serif" font-weight="bold" fill="#0f4c2c">~50</text>
+<text x="70" y="415" font-size="28" fill="#5d6a62">Agrivoltaics pilot sites across India</text>
+<rect x="70" y="465" width="330" height="110" rx="8" fill="#e9f3ec"/>
+<text x="94" y="513" font-size="32" font-weight="bold" fill="#0f4c2c">10 GW</text>
+<text x="94" y="548" font-size="20" fill="#5d6a62">Proposed in PM-KUSUM 2.0</text>
+<rect x="430" y="465" width="330" height="110" rx="8" fill="#e9f3ec"/>
+<text x="454" y="513" font-size="32" font-weight="bold" fill="#0f4c2c">~3.5 m</text>
+<text x="454" y="548" font-size="20" fill="#5d6a62">Panels raised to farm below</text>
+<rect x="790" y="465" width="330" height="110" rx="8" fill="#e9f3ec"/>
+<text x="814" y="513" font-size="32" font-weight="bold" fill="#0f4c2c">2 incomes</text>
+<text x="814" y="548" font-size="20" fill="#5d6a62">Crops plus power</text>
+<text x="70" y="639" font-size="19" fill="#5d6a62">Source: TERI, Drishti IAS, 2026 · Graphic: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>
