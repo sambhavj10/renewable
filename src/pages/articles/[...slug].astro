@@ -2,10 +2,12 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
-import { categorySlug, formatDate } from '../../lib/site';
+import { categorySlug, formatDate, isPublished } from '../../lib/site';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles');
+  const articles = (await getCollection('articles')).filter((a) =>
+    isPublished(a.data.date)
+  );
   return articles.map((article) => ({
     params: { slug: article.id },
     props: { article },
@@ -17,7 +19,9 @@ const { title, date, category, excerpt, hero, heroAlt, sources } = article.data;
 const { Content } = await render(article);
 
 const related = (await getCollection('articles'))
-  .filter((a) => a.id !== article.id && a.data.category === category)
+  .filter(
+    (a) => a.id !== article.id && a.data.category === category && isPublished(a.data.date)
+  )
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---

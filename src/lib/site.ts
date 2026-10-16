@@ -22,6 +22,14 @@ export function categorySlug(category: string): string {
     .replace(/^-|-$/g, '');
 }
 
+// Scheduled publishing: an article counts as published once its `date` has
+// arrived. Future-dated articles are hidden from all listings and get no page
+// until a site build runs on or after that date, so a post dated next Sunday
+// only appears once we're actually on (or past) that day.
+export function isPublished(date: Date, now: Date = new Date()): boolean {
+  return date.valueOf() <= now.valueOf();
+}
+
 export function formatDate(date: Date): string {
   return date.toLocaleDateString('en-IN', {
     day: 'numeric',
