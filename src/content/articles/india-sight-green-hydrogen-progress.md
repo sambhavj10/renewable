@@ -1,6 +1,6 @@
 ---
 title: 'India''s green hydrogen mission: big awards, slow deliveries'
-date: 2026-10-09
+date: 2026-10-25
 category: 'Hydrogen'
 excerpt: 'Incentives under the SIGHT scheme now cover 3,000 MW of electrolyser manufacturing and 862,000 tonnes a year of green hydrogen output — but with only a sliver of capacity actually commissioned, the gap between awards and reality remains wide.'
 hero: /images/hero-sight-hydrogen.svg
