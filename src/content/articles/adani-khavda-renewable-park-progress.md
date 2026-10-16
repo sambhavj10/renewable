@@ -1,6 +1,6 @@
 ---
 title: 'Khavda keeps scaling: inside the giant renewable energy park rising in the Kutch desert'
-date: 2026-10-07
+date: 2026-08-23
 category: 'Solar'
 excerpt: 'Adani Green has crossed roughly 9.7 GW installed at the 30 GW Khavda park in Gujarat, as developers including SAEL and NTPC Green add gigawatt-scale blocks to what is set to become the world''s largest clean energy site.'
 hero: /images/hero-khavda-park.svg
