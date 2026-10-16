@@ -1,6 +1,6 @@
 ---
 title: 'India added 50.6 GW of module and 9.7 GW of cell capacity in the first half of 2026'
-date: 2026-09-27
+date: 2026-09-06
 category: 'Manufacturing'
 excerpt: 'Mercom data shows India''s solar manufacturing base expanding at a blistering pace — but the yawning gap between module and cell capacity remains the supply chain''s weak link.'
 hero: /images/hero-module-cell-additions.svg
