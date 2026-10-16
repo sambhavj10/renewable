@@ -1,6 +1,6 @@
 ---
 title: 'The wind turns: India''s onshore wind sector shows signs of a comeback in 2026'
-date: 2026-10-15
+date: 2026-09-27
 category: 'Wind'
 excerpt: 'After years of underperformance, India''s wind sector is stirring — a stronger third quarter, fuller order books and storage-linked tenders point to a revival, even as annual additions stay well below the solar surge.'
 hero: /images/hero-wind-revival.svg
