@@ -1,6 +1,6 @@
 ---
 title: 'Premier Energies commissions India''s largest solar cell plant with a 7 GW TOPCon line'
-date: 2026-09-23
+date: 2026-10-18
 category: 'Manufacturing'
 excerpt: 'The ₹3,293 crore, 7 GW n-type TOPCon facility at Naidupeta in Andhra Pradesh lifts Premier Energies'' total solar cell capacity to 10.6 GW — making it India''s largest cell manufacturer as the country races to close its biggest supply-chain gap.'
 hero: /images/hero-premier-cell-plant.svg
