@@ -1,6 +1,6 @@
 ---
 title: 'After a year of record-low bids, India''s battery storage tariffs climb back toward viability'
-date: 2026-10-12
+date: 2026-08-30
 category: 'Storage'
 excerpt: 'Standalone battery tariffs that crashed to historic lows in 2025 have firmed through 2026 — GUVNL''s latest auction cleared at ₹2.32 lakh/MW/month — as developers and analysts warn that the cheapest bids may never have been bankable.'
 hero: /images/hero-bess-tariffs-2026.svg
