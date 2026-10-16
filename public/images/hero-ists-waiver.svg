@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+<text x="70" y="78" font-size="22" letter-spacing="4" fill="#17693e" font-weight="bold">POLICY &amp; MARKETS</text>
+<text x="70" y="132" font-size="44" font-family="Georgia, serif" font-weight="bold" fill="#17211b">The transmission waiver winds down</text>
+<text x="70" y="172" font-size="24" fill="#5d6a62">ISTS charge waiver for solar &amp; wind, by commissioning date</text>
+<line x1="80" y1="560" x2="1120" y2="560" stroke="#c9d4cc" stroke-width="2"/>
+<rect x="150" y="180" width="170" height="380" rx="4" fill="#0f4c2c"/>
+<text x="235" y="160" font-size="26" font-weight="bold" fill="#17211b" text-anchor="middle">100%</text>
+<text x="235" y="590" font-size="20" fill="#5d6a62" text-anchor="middle">by Jun 2025</text>
+<rect x="400" y="275" width="170" height="285" rx="4" fill="#17693e"/>
+<text x="485" y="255" font-size="26" font-weight="bold" fill="#17211b" text-anchor="middle">75%</text>
+<text x="485" y="590" font-size="20" fill="#5d6a62" text-anchor="middle">by Jun 2026</text>
+<rect x="650" y="370" width="170" height="190" rx="4" fill="#4ba373"/>
+<text x="735" y="350" font-size="26" font-weight="bold" fill="#17211b" text-anchor="middle">50%</text>
+<text x="735" y="590" font-size="20" fill="#5d6a62" text-anchor="middle">by Jun 2027</text>
+<rect x="900" y="465" width="170" height="95" rx="4" fill="#8fcfa8"/>
+<text x="985" y="445" font-size="26" font-weight="bold" fill="#17211b" text-anchor="middle">25%</text>
+<text x="985" y="590" font-size="20" fill="#5d6a62" text-anchor="middle">by Jun 2028</text>
+<text x="70" y="639" font-size="19" fill="#5d6a62">Source: Mercom India, pv magazine India, 2026 · Graphic: GreenGrid India</text>
+<rect x="0" y="665" width="1200" height="10" fill="#0f4c2c"/>
+</svg>
