@@ -1,6 +1,6 @@
 ---
 title: 'Commercial buyers drive India''s solar open access to a record 6 GW in the first half of 2026'
-date: 2026-10-11
+date: 2026-11-01
 category: 'Policy & Markets'
 excerpt: 'Businesses added nearly 6 GW of solar through the open access route in 1H 2026, lifting cumulative capacity to 36 GW, as companies rushed to lock in projects ahead of changing transmission-charge and sourcing rules.'
 hero: /images/hero-open-access-6gw.svg
