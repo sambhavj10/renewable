@@ -1,6 +1,6 @@
 ---
 title: 'India tries again on offshore wind, with ₹7,453 crore of support and a lot to prove'
-date: 2026-10-03
+date: 2026-10-04
 category: 'Wind'
 excerpt: 'After its first offshore wind tenders drew zero bids, India is relaunching the sector with viability gap funding for an initial 1 GW off Gujarat and Tamil Nadu — a cautious start against an estimated 70 GW of potential.'
 hero: /images/hero-offshore-wind.svg
