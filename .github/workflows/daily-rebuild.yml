@@ -1,0 +1,49 @@
+name: Daily rebuild (publish scheduled articles)
+
+# Future-dated articles are hidden at build time until a build runs on or after
+# their date (see isPublished() in src/lib/site.ts). This workflow triggers a
+# Vercel rebuild once a day so a staged article goes live on its own date,
+# without anyone pushing a commit.
+#
+# Setup (one time):
+#   1. In Vercel: Project → Settings → Git → Deploy Hooks → create a hook on the
+#      production branch (main). Copy the generated URL.
+#   2. In GitHub: repo Settings → Secrets and variables → Actions → New
+#      repository secret, named VERCEL_DEPLOY_HOOK_URL, value = that URL.
+# The URL can trigger deploys, so it is kept as a secret, never in the workflow.
+
+on:
+  schedule:
+    # 00:11 UTC daily (~05:41 IST) — just after the UTC date rolls over, so an
+    # article dated today unlocks the same morning.
+    - cron: "11 0 * * *"
+  workflow_dispatch: {}
+
+# No repository write access needed — this only calls an external hook.
+permissions: {}
+
+concurrency:
+  group: daily-rebuild
+  cancel-in-progress: false
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel deploy hook
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::error::VERCEL_DEPLOY_HOOK_URL secret is not set."
+            echo "Add it in repo Settings → Secrets and variables → Actions (see this file's header)."
+            exit 1
+          fi
+          code=$(curl -sS -o /tmp/resp.txt -w "%{http_code}" -X POST "$HOOK")
+          echo "Vercel deploy hook responded: HTTP $code"
+          cat /tmp/resp.txt 2>/dev/null || true
+          echo
+          case "$code" in
+            2*) echo "Rebuild triggered — any article whose date has arrived will now go live." ;;
+            *)  echo "::error::Deploy hook failed (HTTP $code)."; exit 1 ;;
+          esac
